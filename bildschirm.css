@@ -1,0 +1,146 @@
+﻿/* Stylesheet für die Beispielsite aus "Einstieg in CSS" */
+
+
+* 	{ padding: 0; margin: 0; }
+
+html	{ overflow-y: scroll; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary
+	{ display: block; }
+
+/* Gestalte das HTML-Element mit dem Namen body */
+
+body	{
+	background-color: #8c8c8c; /* Hintergrundfarbe */
+	background-image: url(geometry2.png);	/* die heruntergeladene Datei
+						von subpattern.com */
+	background-repeat: repeat;  /* Standardeinstellung */
+	background-position: left top; /* auch die Standardeinstellung */
+	background-attachment: fixed; /* scroll ist die Standardeinstellung */
+	color: white; /* Schriftfarbe */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 87.5%; /* Schriftgröße 14px */
+	}
+
+div#wrapper {
+	background-color: white;
+	color: black;
+	width: 70%; /* feste Breite definieren */
+	margin: 10px auto; /* Abstände links und rechts auf auto */
+	}
+
+header#kopfbereich 
+	{
+	position: relative;
+	background-color: #c42835; /* vorher: Gelb-Orange - jetzt DSI-rot */
+	color: #999;  /* im Buch: #414141 */
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	}
+
+/* Gestalte das img-Element mit dem attribut class="logo" */
+
+img.logo {
+	background-color: white;
+	}
+
+nav#navibereich
+	{
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	}
+
+main#inhaltsbereich
+	{
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;	
+	}
+
+address	{
+	text-align: center; 	/* zentrieren */
+	font size: 85%;		/* etwas kleiner als der Rest */
+	font-style: normal;	/* normale Schrift, nicht kursiv */
+	letter-spacing: 2px;	/* Abstand zwischen den Buchstaben */
+	line-height: 1.5;	/* Zeilenabstand, ohne Einheit */
+	}
+
+a	{
+	text-decoration: none; }
+main a	{
+	text-decoration: underline }
+
+
+a:link	{ color: #d90000; }
+a:visited 	{ color: #cc6666}
+
+a:hover, a:focus
+	{ text-decoration: none; }
+a:active
+	{ background-color: #d90000; color: white; }
+
+a:focus, a:active
+	{outline: none; }
+
+
+h1, h2	{ font-family: Verdana, Arial, Helvetica, sans-serif; }
+h1	{ font-size: 150%; }
+h2	{ font-size: 130%; }
+
+p.slogan {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	/* left: 45%; */
+	padding: 5px 0 5px 0;
+	margin-bottom: 0;
+	}
+
+p.slogan span {
+	color: white; /* #d90000; */ /* Schriftfarbe */
+	display: block;
+	text-align: right;
+	}
+
+ul li	{ list-style-type: square; }
+
+ol li { list-style-type: decimal; }
+
+ol ol li
+	{
+	list-style-type: lower-alpha;
+	}
+
+p.infobox	{
+		background-color: #8c8c8c;
+		color: LightGray;
+		border: 3px solid #c42835; /* #ecf7dd wars vorher */
+		}
+
+/* Wiederherstellung der Abstände wegen Reset */
+h2, p, ul, ol, blockquote
+	{ margin-bottom: 1em; }
+
+/* Abstand von links */
+ul, ol	{ margin-left: 2em; }
+
+/* Verschachtelte Listen ohne Abstand */
+
+ul ul, ul ol, ol ol, ol ul
+	{ margin-bottom: 0; }
+
+footer#fussbereich
+	{
+	padding-top: 10px;		/* unterhalb der Rahmenlinie */
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left:	20px;
+	border-top: 1px solid #8c8c8c;	/* Rahmenlinie oben */
+	margin-top: 0;		/* war vorher 20px - oberhalb der Rahmenlinie */
+	}
+

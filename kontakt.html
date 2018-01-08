@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<title>Kontaktseite - Little Boxes (Webseiten gestalten mit HTML und CSS)</title>
+	<meta name="description" content="Kontaktformular für die Beispielsite">
+
+<link	href="bildschirm.css"
+	rel="stylesheet"
+	media="screen">
+
+</head>
+
+<body>
+<!-- Der body erscheint om Browserfenster -->
+
+<div id="wrapper">
+
+<header id="kopfbereich">
+<h1>
+<img	src="little-boxes-logo.gif"
+	class="logo"
+	title="schwere Geburt"
+	alt="Little Boxes"
+	width="222"
+	height="32"> </img>
+</h1>
+<p class="slogan">Webseiten gestalten mit HTML und CSS.
+<span>Grundlagen.</span></p>
+</header>
+
+<nav id="navibereich">
+
+<ul>
+	<li><a href="index.html">Startseite</a></li>
+	<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+
+</nav>
+
+<main id="inhaltsbereich">
+
+<h2>Kontaktseite</h2>
+
+<form class="kontakformular" action="#">
+<div>
+	<label for="besuchername">Ihr Name:</label>
+	<input type="text" id="besuchername" name="besuchername">
+</div>
+
+<div>
+	<label for="besuchermail">Ihre	E-Mail:</label>
+	<input type="email" id="besuchermail" name="besuchermail">
+</div>
+
+<div>
+	<label for="nachricht">Ihre Nachricht:</label>
+	<textarea id="nachricht"" name="bachricht"
+		cols="20" rows="5"></textarea>
+</div>
+
+<div>
+	<input type="submit" value="Abschicken">
+</div>
+</form>
+
+	<!-- <p>Hier kommt das Kontakformular hin.</p> war vorher da -->
+
+</main>
+
+<footer id="fussbereich">
+
+<address>
+Little Boxes &bull; Kästchenweg 12 &bull; 01234 Boxberg
+<br>
+Tel: 01234 567890 &bull; Fax 01234 567891
+</address>
+
+</footer>
+
+</div>	<!-- Ende wrapper -->
+
+</body>
+
+</html>
